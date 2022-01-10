@@ -33,7 +33,7 @@ const data = [
     ),
   },
   {
-    title: `Phase 3`,
+    title: `Staeg 3`,
     contents: (
       <div>
         Cemce und Cege Listings
