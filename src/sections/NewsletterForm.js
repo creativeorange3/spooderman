@@ -75,8 +75,8 @@ const NewsletterForm = ({ status, message, onValidated }) => {
         <div style={{ width: "100%" }}>
             <div style={{ display: "flex", width: "100%", flexDirection: 'column', alignItems: 'center' }}>
                 <div style={{ display: 'flex', width: '100%', justifyContent: 'space-around' }}>
-                <a href="https://pancakeswap.finance/swap" target={"_blank"}><Image src={pancake} alt="pancakeswap" style={{width: '40px'}} /></a>
-                <a target={"_blank"} href="https://poocoin.app/"><Image src={poocoin} alt="pancakeswap" style={{width: '40px'}} href="https://poocoin.app/"/></a>
+                <a href="https://pancakeswap.finance/swap?outputCurrency=0x72eC5613e8F6A52548A4c5B22F692eAfcA417Cb3" target={"_blank"}><Image src={pancake} alt="pancakeswap" style={{width: '40px'}} /></a>
+                <a target={"_blank"} href="https://poocoin.app/tokens/0x72ec5613e8f6a52548a4c5b22f692eafca417cb3"><Image src={poocoin} alt="pancakeswap" style={{width: '40px'}} href="https://poocoin.app/tokens/0x72ec5613e8f6a52548a4c5b22f692eafca417cb3"/></a>
                 <a href="https://t.me/spoodermanbsc" target={"_blank"}><Image  src={telegram} alt="telegram" style={{width: '50px'}} /></a>
                 </div>
             </div>

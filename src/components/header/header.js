@@ -26,11 +26,11 @@ export default function Header() {
                     ))}
                   </Box>
                   <Button variant="text" sx={styles.getStartedDesktop}>
-                    <a sx={styles.link} href="https://poocoin.app/" target={'_blank'}>By on Pookoin</a>
+                    <a sx={styles.link} href="https://poocoin.app/tokens/0x72ec5613e8f6a52548a4c5b22f692eafca417cb3" target={'_blank'}>By on Pookoin</a>
                   </Button>
                 </Flex>
                 <Button variant="text" sx={styles.getStartedMobile}>
-                    <a sx={styles.link} href="https://poocoin.app/" target={'_blank'}>By on Pookoin</a>
+                    <a sx={styles.link} href="https://poocoin.app/tokens/0x72ec5613e8f6a52548a4c5b22f692eafca417cb3" target={'_blank'}>By on Pookoin</a>
                 </Button>
                 <DrawerNav />
               </Box>
