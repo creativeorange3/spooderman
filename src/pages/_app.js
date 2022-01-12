@@ -15,10 +15,6 @@ export default function CustomApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <>
-      <Head>
-        <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do:wght@400;700&display=swap" rel="stylesheet" />
-      </Head>
-      <Component {...pageProps} /></>
+      <Component {...pageProps} />
   );
 }

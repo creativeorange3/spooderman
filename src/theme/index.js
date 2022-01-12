@@ -1,5 +1,4 @@
 export default {
-  
   // example colors with dark mode
   colors: {
     text: '#343D48', // body color and primary color
@@ -28,12 +27,12 @@ export default {
     },
   },
   fonts: {
-    body: 'Nothing You Could Do',
+    body: 'DM Sans',
     // body:
     //   'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-    heading: 'Nothing You Could Do',
-    headingSerif: `Nothing You Could Do`,
-    monospace: 'Nothing You Could Do',
+    heading: 'DM Sans',
+    headingSerif: `Crimson Text`,
+    monospace: 'Menlo, monospace',
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
   fontWeights: {

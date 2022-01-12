@@ -24,7 +24,7 @@ const Banner = () => {
               <b>SPOODERMAN</b>
             </Heading> */}
             <Text as="p" style={{fontWeight: 'bold', fontSize: '24px'}}>
-              Teh amaizng spooderman comez to teh bince smert chan<br/>dolan y u do dis
+              Teh amaizng spooderman comez to teh bince smert chan<br/>Dolan duk killre
             </Text>
             <Box sx={styles.subscribe}>
               <NewsletterSubscribe />
@@ -57,7 +57,7 @@ const styles = {
     textAlign: [null, null, null, 'center', 'left'],
     h1: {
       color: 'textSecondary',
-      fontFamily: 'Nothing You Could Do, Serif',
+      fontFamily: 'DM Sans, Serif',
       fontWeight: 600,
       fontSize: ['34px', '34px', '34px', '44px', '40px', '49px', '62px'],
       lineHeight: [1.26, 1.26, 1.11, 1.4, 1.11],
