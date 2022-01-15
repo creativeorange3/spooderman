@@ -19,19 +19,19 @@ const Banner = () => {
     <Box as="section" id="home" sx={styles.section}>
       <Container>
         <Box sx={styles.contentWrapper}>
+          <Box as="figure" sx={styles.illustration} style={{ borderRadius: "30px" }}>
+          <Image src={logo} style={{width: '70%'}}alt="Spooderman" />
+          </Box>
           <Box sx={styles.content}>
             {/* <Heading as="h1">
               <b>SPOODERMAN</b>
             </Heading> */}
             <Text as="p" style={{fontWeight: 'bold', fontSize: '24px'}}>
-              Teh amaizng spooderman comez to teh bince smert chan<br/>Dolan duk killre
+              Teh amaizng spooderman comez to teh bince smert chan<br/>al crepto killre
             </Text>
             <Box sx={styles.subscribe}>
               <NewsletterSubscribe />
             </Box>
-          </Box>
-          <Box as="figure" sx={styles.illustration} style={{ borderRadius: "30px" }}>
-          <Image src={logo} style={{width: '70%'}}alt="Spooderman" />
           </Box>
         </Box>
       </Container>
@@ -48,7 +48,7 @@ const styles = {
     gap: [0, 0, 0, 0, 60],
     alignItems: 'center',
     minHeight: [null, null, '100vh', '70vh', '50vh', '100vh'],
-    pt: ['100px', null, null, '130px', '125px', null, 0],
+    pt: ['30px', null, null, '130px', '125px', null, 0],
     textAlign: ['center', null, 'left'],
   },
   content: {

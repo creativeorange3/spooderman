@@ -1,8 +1,9 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Box, Container } from 'theme-ui';
+import { jsx, Box, Container, Image } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import Feature from 'components/cards/feature';
+import tokonomiks from 'assets/images/tokonomics.png'
 
 import individual from 'assets/images/tokenomics.png';
 import team from 'assets/images/tokenomics.png';
@@ -31,13 +32,11 @@ const data = [
 
 const Services = () => {
   return (
-    <Box as="section" id="tokenomics" variant="section.features" style={{paddingTop: '69px'}}>
-      <Container>
-        <SectionHeading
-          sx={styles.heading}
-          title="Tokonomiks"
-          description="13% buy and sell (ken change)"
-        />
+    <Box as="section" id="tokenomics" variant="section.features" style={{ paddingTop: '69px' }}>
+      <Container style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
+        <Image src={tokonomiks} /><br/>
+        <h2>13% buy and sell</h2>
+
         <Box sx={styles.features}>
           {data?.map((item) => (
             <Feature key={item.id} className="feature-item" data={item} />

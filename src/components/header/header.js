@@ -1,7 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Box, Container, Flex, Button } from 'theme-ui';
-import Sticky from 'react-stickynode';
+import { jsx, Box, Container, Flex, Button, Image } from 'theme-ui';
+import banner from 'assets/images/banner.png'
 import Logo from 'components/logo';
 import { NavLink } from 'components/link';
 import { DrawerProvider } from 'contexts/drawer/drawer-provider';
@@ -12,31 +12,24 @@ export default function Header() {
   return (
     <DrawerProvider>
       <Box sx={styles.headerWrapper}>
-        <Sticky enabled={true} top={0} activeClass="is-sticky" innerZ={10}>
-          <Box as="header" variant="layout.header">
-            <Container>
-              <Box sx={styles.headerInner}>
-                <Logo sx={styles.logo} />
-                <Flex as="nav" sx={styles.navbar} className="navbar">
-                  <Box as="ul" sx={styles.navList}>
+        {/* <Sticky enabled={false} top={0} innerZ={10}> */}
+        <Box as="header" variant="layout.header">
+          <Image src={banner} />
+          <Container>
+            <Box sx={styles.headerInner}>
+              <Flex as="nav" sx={styles.navbar} className="navbar">
+                {/* <Box as="ul" sx={styles.navList}>
                     {menuItems.map(({ path, label }, i) => (
                       <li key={i} style={{fontWeight: 'bolder'}}>
                         <NavLink path={path} label={label} />
                       </li>
                     ))}
-                  </Box>
-                  <Button variant="text" sx={styles.getStartedDesktop}>
-                    <a sx={styles.link} href="https://poocoin.app/tokens/0x72ec5613e8f6a52548a4c5b22f692eafca417cb3" target={'_blank'}>By on Pookoin</a>
-                  </Button>
-                </Flex>
-                <Button variant="text" sx={styles.getStartedMobile}>
-                    <a sx={styles.link} href="https://poocoin.app/tokens/0x72ec5613e8f6a52548a4c5b22f692eafca417cb3" target={'_blank'}>By on Pookoin</a>
-                </Button>
-                <DrawerNav />
-              </Box>
-            </Container>
-          </Box>
-        </Sticky>
+                  </Box> */}
+              </Flex>
+            </Box>
+          </Container>
+        </Box>
+        {/* </Sticky> */}
       </Box>
     </DrawerProvider>
   );
@@ -49,7 +42,13 @@ const styles = {
     color: 'inherit'
   },
   headerWrapper: {
+    // px: 10,
     header: {
+
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
       fontWeight: 'bold',
       position: 'fixed',
       left: 0,

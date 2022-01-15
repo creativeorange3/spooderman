@@ -9,6 +9,8 @@ import {
 
 import pancake from 'assets/images/pancake.svg'
 import poocoin from 'assets/images/poocoin.svg'
+import reddit from 'assets/images/reddit.svg'
+import twitter from 'assets/images/twitter.svg'
 import telegram from 'assets/images/telegram.png'
 import { Link } from 'react-scroll';
 
@@ -78,6 +80,9 @@ const NewsletterForm = ({ status, message, onValidated }) => {
                 <a href="https://pancakeswap.finance/swap?outputCurrency=0x72eC5613e8F6A52548A4c5B22F692eAfcA417Cb3" target={"_blank"}><Image src={pancake} alt="pancakeswap" style={{width: '40px'}} /></a>
                 <a target={"_blank"} href="https://poocoin.app/tokens/0x72ec5613e8f6a52548a4c5b22f692eafca417cb3"><Image src={poocoin} alt="pancakeswap" style={{width: '40px'}} href="https://poocoin.app/tokens/0x72ec5613e8f6a52548a4c5b22f692eafca417cb3"/></a>
                 <a href="https://t.me/spoodermanbsc" target={"_blank"}><Image  src={telegram} alt="telegram" style={{width: '50px'}} /></a>
+                <a href="https://www.reddit.com/r/spoodermanbsc/" target={"_blank"}><Image  src={reddit} alt="reddit" style={{width: '50px', height: 'auto'}} /></a>
+                <a href="https://twitter.com/BscSpooderman" target={"_blank"}><Image  src={twitter} alt="twitter" style={{width: '50px', height: 'auto'}} /></a>
+
                 </div>
             </div>
             <div className="newsletter-form-info" style={{ paddingTop: "20px" }}>

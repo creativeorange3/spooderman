@@ -27,7 +27,7 @@ const SubscribeUs = () => {
           <SectionHeading
             sx={styles.heading}
             title="Whale cum to spooderman"
-            description="Dolan got nuting on us"
+            description=""
           />
           <Box as="form" sx={styles.subscribe} onSubmit={handleSubmit}>
             <Flex sx={styles.formGroup}>

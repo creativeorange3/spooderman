@@ -1,25 +1,20 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Box, Container, Image } from 'theme-ui';
-import SectionHeading from 'components/section-heading';
-import Accordion from 'components/accordion/accordion';
-import feature from 'assets/images/gentleman.png';
-import roadmap from 'assets/images/roadmap.png'
-import detroadmap from 'assets/images/detroadmap.png'
-import emoji from 'assets/images/icons/emoji-2.png';
+import  faqs from 'assets/images/faq.png'
 
 
-const ExcitingFeatures = () => {
+const faq = () => {
   return (
-    <Box as="section" id="roadmapz" variant="section.workHard">      <Container style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-      <Image src={roadmap} /><br />
-      <Image src={detroadmap} /><br />
-    </Container>
+    <Box as="section" id="roadmap" variant="section.faq">
+      <Container style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
+        <Image src={faqs} /><br/>
+      </Container>
     </Box>
   );
 };
 
-export default ExcitingFeatures;
+export default faq;
 
 const styles = {
   contentWrapper: {

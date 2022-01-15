@@ -3,6 +3,9 @@
 import { jsx, Box, Flex, Container, Image, Text } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import { LearnMore } from 'components/link';
+import fitures from 'assets/images/fitures.png'
+import trufitures from 'assets/images/trufitures.png';
+import verifid from 'assets/images/verifid.png';
 import spooderman from 'assets/images/fatspooder.png';
 import emoji from 'assets/images/icons/emoji.png';
 import check from 'assets/images/icons/check-circle.png';
@@ -37,14 +40,13 @@ const data = [
 const WorkHard = () => {
   return (
     <Box as="section" id="features" variant="section.workHard">
-      <Container>
-        <Box sx={styles.contentWrapper}>
+      <Container style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
+        <Image src={fitures} /><br/>
+        <Image src={trufitures} /><br/>
+        <div style={{ background: 'red', padding: '5px 10px', fontWeight: 'bold', color: 'white', fontSize: '15px'}}>0x72ec5613e8f6a52548a4c5b22f692eafca417cb3</div>
+        <Image style={{paddingTop: '20px'}} src={verifid} /><br/>
+        {/* <Box sx={styles.contentWrapper}>
           <Box sx={styles.rightContent}>
-            <SectionHeading
-              sx={styles.heading}
-              title="No Wai Hoem"
-              description=""
-            />
             <Box sx={styles.features}>
               {data?.map(({ id, label }) => (
                 <Flex key={id} as="span" sx={{ alignItems: 'flex-start' }}>
@@ -57,7 +59,7 @@ const WorkHard = () => {
           <Box sx={styles.illustration}>
             <Image src={spooderman} alt="Feature Spooderman" />
           </Box>
-        </Box>
+        </Box> */}
       </Container>
     </Box>
   );
